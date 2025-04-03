@@ -1,8 +1,7 @@
 import requests
 from sleeper_utils import *
 
-# username = "input("Enter your Sleeper username: ")"
-username = "jakob12345"
+username = input("Enter your Sleeper username: ")
 
 user_url = f"https://api.sleeper.app/v1/user/{username}"
 user_response = requests.get(user_url)
